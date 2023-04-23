@@ -1,0 +1,38 @@
+.index-page{
+    
+    .weather{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        &_icon{
+            width: 8rem;
+            height: 8rem;
+        }
+        &_text{
+            font-size: 2.5rem;
+        }
+        &_days{
+            flex:0 0 70%;
+            height: 20rem;
+            object-fit: cover;
+            padding: 2rem;
+        }
+    }
+    .links-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        &_item{
+            background-color: rgba(183, 235, 143,0.8);
+            box-shadow: 0 0 2rem rgba(35, 120, 4,0.15);
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            &_icon{}
+            &_text{
+                padding: 1rem;
+            }
+        }
+    }
+}

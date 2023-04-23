@@ -1,0 +1,240 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  transition: all 0.2s;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  text-align: center;
+  color: #001d66;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #e6f4ff;
+}
+
+.pages {
+  background-image: linear-gradient(to right bottom, #bae0ff, #69b1ff);
+  padding: 0.8rem 0;
+  margin: auto;
+  width: 500px;
+}
+@media (max-width: 500px) {
+  .pages {
+    width: 100%;
+    min-height: 100%;
+  }
+}
+
+@keyframes breath {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1rem;
+  margin: 2rem;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.s-card {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.now-count {
+  flex-direction: column;
+}
+.now-count_heading {
+  font-size: 2.5rem;
+}
+.now-count_count {
+  font-size: 3.8rem;
+  animation: breath 0.8s infinite;
+}
+.now-count_count_g {
+  font-size: 2.5rem;
+}
+
+img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.index-page .weather {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.index-page .weather_icon {
+  width: 8rem;
+  height: 8rem;
+}
+.index-page .weather_text {
+  font-size: 2.5rem;
+}
+.index-page .weather_days {
+  flex: 0 0 70%;
+  height: 20rem;
+  object-fit: cover;
+  padding: 2rem;
+}
+.index-page .links-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.index-page .links-list_item {
+  background-color: rgba(183, 235, 143, 0.8);
+  box-shadow: 0 0 2rem rgba(35, 120, 4, 0.15);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+.index-page .links-list_item_text {
+  padding: 1rem;
+}
+
+.mechine-page .recent-fruit {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.mechine-page .recent-fruit_heading {
+  flex: 0 0 100%;
+  font-size: 2rem;
+}
+.mechine-page .recent-fruit_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex: 0 0 50%;
+}
+.mechine-page .recent-fruit_info {
+  border-left: 2px solid #001d66;
+  padding: 0 2rem;
+  flex: 1;
+  font-size: 1.4rem;
+}
+.mechine-page .weather {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
+.mechine-page .weather_t {
+  flex: 0 0 46%;
+}
+.mechine-page .weather_h {
+  flex: 0 0 46%;
+}
+.mechine-page .weather_t, .mechine-page .weather_h {
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+.mechine-page .weather_text {
+  font-size: 4rem;
+  margin-left: -6rem;
+}
+.mechine-page .weather_text_foot {
+  font-size: 2rem;
+}
+.mechine-page .charts {
+  justify-content: space-around;
+}
+.mechine-page .charts img {
+  width: 10rem;
+  height: 10rem;
+}
+.mechine-page .data {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.mechine-page .data-item {
+  margin: 0.6rem 0;
+  padding: 1.3rem 0;
+  flex: 0 0 46%;
+  justify-content: space-around;
+  box-shadow: none;
+}
+.mechine-page .data-item_heading {
+  font-size: 1.2rem;
+}
+.mechine-page .data-item_data {
+  font-size: 2.8rem;
+}
+.mechine-page .data-item .data-foot {
+  font-size: 1.6rem;
+}
+
+.project-page .achive {
+  flex-direction: column;
+  position: relative;
+}
+.project-page .achive_heading {
+  font-size: 2rem;
+}
+.project-page .post {
+  flex-direction: column;
+  padding: 0;
+}
+.project-page .post_heading {
+  font-size: 2rem;
+}
+.project-page .post_img {
+  width: 100%;
+  height: auto;
+}
+.project-page .video {
+  flex-direction: column;
+  height: 24rem;
+  position: relative;
+}
+@media (max-width: 500px) {
+  .project-page .video {
+    height: 48vw;
+  }
+}
+.project-page .video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  opacity: 0.2;
+}
+.bg-video-content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=main.css.map */

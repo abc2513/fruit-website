@@ -1,0 +1,72 @@
+.mechine-page{
+    .recent-fruit{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        &_heading{
+            flex: 0 0 100%;
+            font-size: 2rem;
+        }
+        &_icons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex:0 0 50%;
+        }
+        &_info{
+            border-left: 2px solid #001d66;
+            padding: 0 2rem;
+            flex:1;
+            font-size: 1.4rem;
+        }
+    }
+    .weather{
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        background-color: transparent;
+        box-shadow: none;
+        &_t{
+            flex:0 0 46%;
+        };
+        &_h{
+            flex:0 0 46%;
+        }
+        &_t,&_h{
+            padding: 1.5rem 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        &_text{
+            font-size: 4rem;
+            margin-left: -6rem;
+            &_foot{
+                font-size: 2rem;
+            }
+        }
+    }
+    .charts{
+        justify-content: space-around;
+        img{
+            width: 10rem ;
+            height: 10rem;
+        }
+    }
+    .data{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        &-item{
+            margin: 0.6rem 0;
+            padding: 1.3rem 0;
+            flex: 0 0 46%;
+            justify-content: space-around;
+            box-shadow: none;
+            &_content{
+                //margin: auto;
+            }
+            &_heading{font-size: 1.2rem;}
+            &_data{font-size: 2.8rem;}
+            .data-foot{font-size: 1.6rem;}
+        }
+    }
+} 
