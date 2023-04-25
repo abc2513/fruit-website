@@ -46,7 +46,12 @@
         }
     }
     .charts{
+        height: 25rem;
         justify-content: space-around;
+        .chart-content{
+            height: 100%;
+            width: 100%;
+        }
         img{
             width: 10rem ;
             height: 10rem;

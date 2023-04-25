@@ -1,36 +1,87 @@
-.index-page{
-    
-    .weather{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        &_icon{
-            width: 8rem;
+.index-page {
+    // display: flex;
+    // justify-content: space-around;
+    // flex-direction: column;
+    .weather {
+        position: relative;
+        .day-small-card {
+            display: inline-block;
+            width: 50%;
             height: 8rem;
+            //background-image: linear-gradient(rgba($color-grey-dark,0.2),$color-white 90%);
+            position: relative;
+            &:not(:last-child) {
+                border-right: 1px solid rgba(0, 0, 0, 0.25);
+            }
+            &-icon {
+                font-size: 5rem;
+                position: absolute;
+                bottom: 0.7rem;
+                line-height: 4rem;
+                left: 1rem;
+            }
+            &-text {
+                //display: inline-block;
+                position: absolute;
+                font-size: 2rem;
+                bottom: 0;
+                left: 6rem;
+            }
+            &-day {
+                position: absolute;
+                bottom: 0.7rem;
+                right: 0.2rem;
+            }
+            &-temp {
+                position: absolute;
+                top: 0.2rem;
+                right: 0.3rem;
+                font-size: 2.1rem;
+            }
         }
-        &_text{
-            font-size: 2.5rem;
+        // display: flex;
+        // flex-wrap: wrap;
+        // flex-direction: row;
+        // justify-content: space-around;
+        // &_icon{
+        //     width: 8rem;
+        //     height: 8rem;
+        // }
+        // &_text{
+        //     font-size: 2.5rem;
+        // }
+        // &_days{
+        //     flex:0 0 70%;
+        //     height: 20rem;
+        //     object-fit: cover;
+        //     padding: 2rem;
+        // }
+    }
+    .charts{
+        height: 25rem;
+        justify-content: space-around;
+        .chart-content{
+            height: 100%;
+            width: 100%;
         }
-        &_days{
-            flex:0 0 70%;
-            height: 20rem;
-            object-fit: cover;
-            padding: 2rem;
+        img{
+            width: 10rem ;
+            height: 10rem;
         }
     }
-    .links-list{
+    .links-list {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        &_item{
-            background-color: rgba(183, 235, 143,0.8);
-            box-shadow: 0 0 2rem rgba(35, 120, 4,0.15);
+        &_item {
+            background-color: rgba(255, 255, 255, 0.4);
+            //box-shadow: 0 0 2rem rgba(35, 120, 4,0.15);
             padding: 1rem;
             display: flex;
             align-items: center;
-            &_icon{}
-            &_text{
+            &_icon {
+            }
+            &_text {
                 padding: 1rem;
             }
         }

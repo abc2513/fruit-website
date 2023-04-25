@@ -5,22 +5,23 @@
     transition: all .2s;
 }
 html{
-    font-size: 62.5%;
+    font-size: 10px;
     font-family: sans-serif;
     text-align: center;
-    color: #001d66;
+    color: #002329;
 }
 body{
     min-height: 100vh;
     background-color: #e6f4ff;
 }
 .pages{
-    background-image: linear-gradient(to right bottom,#bae0ff,#69b1ff);
-
+    //background-image: linear-gradient(to right bottom,#bae0ff,#69b1ff);
+    background-blend-mode: screen;
+    background-image: url(../media/background.webp);
+    //background-color: rgba($color: #fff, $alpha: 0.7);
+    min-height: 100vh;
     @media (max-width:500px) {
-        
         width: 100%;
-        min-height: 100%;
     }
     padding: .8rem 0;
     margin: auto;

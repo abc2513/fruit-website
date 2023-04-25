@@ -1,5 +1,5 @@
 .card{
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.8);
     padding: 1rem;
     margin: 2rem;
     box-shadow: 1rem 1rem 2rem rgba(0,0,0,.25);
@@ -8,7 +8,7 @@
     font-size: 1.6rem;
 }
 .s-card{
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.8);
     box-shadow: 1rem 1rem 2rem rgba(0,0,0,.25);
     display: flex;
     align-items: center;
@@ -16,12 +16,15 @@
 }
 .now-count{
     flex-direction: column;
+    padding: 3rem;
+    background-color: rgba(#87e8de,0.9);
+    //color: rgb(19, 194, 194);
     &_heading{
         font-size: 2.5rem;
     }
     &_count{
-        font-size: 3.8rem;
-         animation: breath .8s infinite;
+        font-size: 5rem;
+         animation: breath 1.2s infinite;
         &_g{
             font-size: 2.5rem;
         }
@@ -31,3 +34,4 @@ img{
     width: 5rem;
     height: 5rem;
 }
+
